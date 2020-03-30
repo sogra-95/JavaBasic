@@ -5,7 +5,7 @@ public class overloading {
 	public static void main (String a[])
 	{
 		Ab obj = new Ab();
-		obj.show ();
+		obj.show (5.5f);
 	}
 }
 class Ab
@@ -21,5 +21,9 @@ class Ab
 	public void show(float b)
 	{
 		System.out.println("hell float");
+	}
+	public void show(double b)
+	{
+		System.out.println("hell double");
 	}
 }

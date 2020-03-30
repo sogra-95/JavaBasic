@@ -23,7 +23,7 @@ class Y extends X
 	public static void main(String a[])
 	{
 		
-		s obj = new t();
+		s obj = new s();
 		obj.show(5);
 
 	}
@@ -42,7 +42,7 @@ class s
 }
 class t extends s
 {
-	public t()
+	public t(int a)
 	{
 		System.out.println("in t cons");
 	}

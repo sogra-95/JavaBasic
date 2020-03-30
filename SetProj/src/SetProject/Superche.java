@@ -3,31 +3,34 @@ package SetProject;
 public class Superche {
 public static void main (String a[])
 {
-	x obj = new y(5);
+	x obj = new y();
+	obj.show();
 }
 }
 class x
 {
+	int i =1;
 	public x()
 	{
-		super();
+		//super();
 		System.out.println("in con x");
 	}
-	public  x(int i)
+	public void show ()
 	{
 		System.out.println("in x para");
 	}
 }
 class y extends x
 {
+	int i=5;
 	public y()
 	{
 		//super();
 		System.out.println("in con y");
 	}
-	public y(int i)
+	public void show ()
 	{
-		super (i);
-		System.out.println("in y para");
+	  super.show();
+		System.out.println("in y para"+super.i);
 	}
 }
